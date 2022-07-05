@@ -1,0 +1,3 @@
+# Ignored file for eslint
+nuxt.config.ts
+tailwind.config.js
