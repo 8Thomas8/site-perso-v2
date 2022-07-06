@@ -1,14 +1,21 @@
 <script setup>
-import Footer from "../components/common/footer";
+import Footer from '../components/common/footer';
+import Breadcrumbs from '../components/common/breadcrumbs';
 
 const navigation = [
-  {name: 'Accueil', route: '/'},
-  {name: 'Mon CV', route: '/cv'},
-]
+  {
+    name: 'Accueil',
+    route: '/',
+  },
+  {
+    name: 'Mon CV',
+    route: '/cv',
+  },
+];
 </script>
 
 <template>
-  <div>
+  <div class="bg-base-200">
     <div class="drawer">
       <input id="menu-drawer" type="checkbox" class="drawer-toggle"/>
       <div class="drawer-content flex flex-col">
@@ -24,15 +31,17 @@ const navigation = [
                 </svg>
               </label>
             </div>
-            <div class="flex-1 px-2 mx-2">
-              <NuxtLink :to="navigation[0].route" :title="navigation[0].name">Thomas-Rousseau.fr</NuxtLink>
+            <div class="flex-1 px-4">
+              <NuxtLink :to="navigation[0].route" :title="navigation[0].name">Thomas-Rousseau.fr
+              </NuxtLink>
             </div>
             <div class="flex-none hidden lg:block">
               <ul class="menu menu-horizontal gap-x-2">
                 <!-- Navbar menu content here -->
                 <template v-for="(item, index) in navigation" :key="index">
                   <li>
-                    <NuxtLink class="btn btn-primary rounded-lg min-w-[96px]" :to="item.route" :title="item.name">
+                    <NuxtLink class="btn btn-primary rounded-lg min-w-[96px]" :to="item.route"
+                              :title="item.name">
                       {{ item.name }}
                     </NuxtLink>
                   </li>
@@ -41,10 +50,17 @@ const navigation = [
             </div>
           </div>
         </div>
-        <!-- Page content here -->
-          <slot/>
+        <div class="w-full mx-auto max-w-5xl h-[36px]">
+          <Breadcrumbs v-if="$route.path !== '/'"/>
+        </div>
+        <div class="flex-grow pt-3">
+          <main class="py-8">
+            <!-- Page content here -->
+            <slot/>
+          </main>
+        </div>
 
-        <Footer />
+        <Footer/>
       </div>
       <div class="drawer-side">
         <label for="menu-drawer" class="drawer-overlay"></label>

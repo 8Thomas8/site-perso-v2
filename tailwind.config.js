@@ -7,7 +7,12 @@ module.exports = {
         "./plugins/**/*.{js,ts}"
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                opensans: ["Open Sans", "sans-serif"],
+                roboto: ["Roboto", "sans-serif"]
+            }
+        },
     },
     plugins: [require("daisyui")],
     // daisyUI config

@@ -1,11 +1,13 @@
+<script>
+import HomeHero from '../components/hero-sections/home-hero.vue';
+
+export default {
+  components: { HomeHero },
+};
+</script>
+
 <template>
-  <div>
-    <HomeHero />
+  <div class="flex items-center h-full">
+    <HomeHero/>
   </div>
 </template>
-<script>
-import HomeHero from "../components/hero-sections/home-hero";
-export default {
-  components: {HomeHero}
-}
-</script>
