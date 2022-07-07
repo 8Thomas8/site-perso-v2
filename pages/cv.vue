@@ -117,6 +117,11 @@ const experiences = [
         <div class="carousel w-full">
           <XpCard :experiences="experiences"/>
         </div>
+        <div class="flex lg:hidden justify-center w-full py-2 gap-2">
+          <template v-for="(xp, index) in experiences" :key="index">
+            <a :href="'#slide' + (index+1)" title="" class="btn btn-xs">{{index+1}}</a>
+          </template>
+        </div>
       </div>
     </div>
   </section>

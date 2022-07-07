@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <section v-for="(xp, index) in experiences" :key="index" :id="'slide' + index" class="carousel-item relative w-full">
+  <section v-for="(xp, index) in experiences" :key="index" :id="'slide' + (index+1)" class="carousel-item relative w-full">
     <div class="card bg-gray-100 shadow-xl max-w-xl mx-auto w-full relative">
       <div class="absolute left-auto right-4 top-2 badge badge-lg badge-accent">{{xp.type}}</div>
 
@@ -50,12 +50,12 @@ defineProps({
       </div>
     </div>
     <div
-        class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a :class="index-1 >= 0 ? '' : 'pointer-event-none opacity-20'"
-         :href="'#slide' + (index - 1)"
+        class="absolute hidden lg:flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a :class="index >= 1 ? '' : 'pointer-event-none opacity-20'"
+         :href="'#slide' + (index)"
          class="btn btn-circle">❮</a>
       <a :class="index+1 < experiences.length ? '' : 'pointer-event-none opacity-20'"
-         :href="'#slide' + (index + 1)" class="btn btn-circle">❯</a>
+         :href="'#slide' + (index + 2)" class="btn btn-circle">❯</a>
     </div>
   </section>
 </template>
