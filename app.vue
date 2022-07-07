@@ -1,5 +1,10 @@
+<script setup>
+// const darkmode = useDarkmode();
+</script>
+
 <template>
   <div>
+<!--    <Html lang="fr" :data-theme="darkmode.active ? 'dark' : 'emerald'"/>-->
     <Head>
       <Title>Thomas Rousseau - Site web</Title>
       <Meta name="description"
@@ -32,6 +37,7 @@ h1, h2, h3, h4, h4, h5, h6 {
 .page-leave-active {
   transition: opacity 0.5s;
 }
+
 .page-enter,
 .page-leave-to {
   opacity: 0;

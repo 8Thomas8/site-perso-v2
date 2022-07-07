@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <section v-for="(xp, index) in experiences" :key="index" :id="'slide' + (index+1)" class="carousel-item relative w-full">
-    <div class="card bg-gray-100 shadow-xl max-w-xl mx-auto w-full relative">
+    <div class="card bg-base-100 shadow-xl max-w-xl mx-auto w-full relative">
       <div class="absolute left-auto right-4 top-2 badge badge-lg badge-accent">{{xp.type}}</div>
 
       <div class="p-6">
