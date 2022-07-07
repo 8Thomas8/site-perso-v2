@@ -111,18 +111,25 @@ const experiences = [
 </script>
 
 <template>
-  <section class="flex items-center h-full">
-    <div class="w-full mx-auto max-w-5xl">
-      <div class="px-4">
-        <div class="carousel w-full">
-          <XpCard :experiences="experiences"/>
-        </div>
-        <div class="flex lg:hidden justify-center w-full py-2 gap-2">
-          <template v-for="(xp, index) in experiences" :key="index">
-            <a :href="'#slide' + (index+1)" title="" class="btn btn-xs">{{index+1}}</a>
-          </template>
+  <div>
+    <Head>
+      <Title>Thomas Rousseau - Mon CV</Title>
+      <Meta name="description"
+            content="Toutes mes expériences professionnelles marquantes, ainsi que mes formations, sont présentes sur cette page. N'hésitez pas à les consulter.."/>
+    </Head>
+    <section class="flex items-center h-full">
+      <div class="w-full mx-auto max-w-5xl">
+        <div class="px-4">
+          <div class="carousel w-full">
+            <XpCard :experiences="experiences"/>
+          </div>
+          <div class="flex lg:hidden justify-center w-full py-2 gap-2">
+            <template v-for="(xp, index) in experiences" :key="index">
+              <a :href="'#slide' + (index+1)" title="" class="btn btn-xs">{{index+1}}</a>
+            </template>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
