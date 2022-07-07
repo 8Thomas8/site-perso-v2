@@ -3,7 +3,7 @@ import XpCard from '../components/cards/xp-card.vue';
 
 const experiences = [
   {
-    formation: false,
+    type: 'CDI',
     enterprise: 'Bemove',
     city: 'Chantepie',
     date: 'Depuis 2020',
@@ -51,7 +51,7 @@ const experiences = [
     ],
   },
   {
-    formation: false,
+    type: 'CDI',
     enterprise: 'Apside',
     city: 'Rennes',
     date: '2019 à 2020',
@@ -74,7 +74,7 @@ const experiences = [
     ],
   },
   {
-    formation: true,
+    type: 'Formation',
     enterprise: 'TactFactory',
     city: 'Noyal sur Vilaine',
     date: '2019',
@@ -91,13 +91,13 @@ const experiences = [
     ],
   },
   {
-    formation: true,
+    type: 'Formation',
     enterprise: 'Openclassrooms',
     city: 'En ligne',
     date: '2018 à 2019',
     resume: {
       skills: [
-        'Html/CSS',
+        'HTML/CSS',
         'Javascript',
         'Angular',
         'UML',

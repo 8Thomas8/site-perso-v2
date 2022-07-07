@@ -57,7 +57,8 @@
             </a>
             avec et sans API.
           </p>
-          <button class="btn btn-primary">En savoir plus</button>
+          <p class="pb-6">Vous pouvez me contacter via <a href="https://www.linkedin.com/in/tomrss/" class="link link-secondary font-semibold" title="Linkedin" target="_blank">Linkedin</a> ou <a href="https://twitter.com/Thomas_RSO" class="link link-secondary font-semibold" title="Twitter" target="_blank">Twitter</a>.</p>
+          <nuxt-link to="cv" title="Consulter mes expériences" class="btn btn-primary">Consulter mes expériences</nuxt-link>
         </div>
       </div>
     </div>

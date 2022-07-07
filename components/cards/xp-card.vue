@@ -10,7 +10,7 @@ defineProps({
 <template>
   <section v-for="(xp, index) in experiences" :key="index" :id="'slide' + index" class="carousel-item relative w-full">
     <div class="card bg-gray-100 shadow-xl max-w-xl mx-auto w-full relative">
-      <div v-if="xp.formation" class="absolute left-auto right-4 top-2 badge badge-lg badge-accent">Formation</div>
+      <div class="absolute left-auto right-4 top-2 badge badge-lg badge-accent">{{xp.type}}</div>
 
       <div class="p-6">
         <div class="flex justify-between">
