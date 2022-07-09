@@ -12,7 +12,9 @@ defineProps({
 </script>
 
 <template>
-  <NuxtLink :to="route" :title="title">
-    Thomas-Rousseau.fr
-  </NuxtLink>
+  <div>
+    <NuxtLink :to="route" :title="title" class="font-roboto font-extrabold uppercase text-lg">
+      [ Thomas-Rousseau.fr ]
+    </NuxtLink>
+  </div>
 </template>
