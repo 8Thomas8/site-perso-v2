@@ -1,5 +1,6 @@
 <script setup>
 let darkmode = useDarkmode()
+console.log(darkmode.value)
 </script>
 
 <template>
@@ -9,11 +10,11 @@ let darkmode = useDarkmode()
         <p>Copyright © {{ new Date().getFullYear() }} - Tous droits réservés</p>
       </div>
       <div>
-        {{darkmode.active}}
+        {{darkmode }}
         <label class="swap swap-rotate">
 
           <!-- this hidden checkbox controls the state -->
-          <input v-model="darkmode.active" type="checkbox" :checked="darkmode.active"/>
+          <input v-model="darkmode" type="checkbox" :checked="darkmode"/>
 
           <!-- sun icon -->
           <svg class="swap-on fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

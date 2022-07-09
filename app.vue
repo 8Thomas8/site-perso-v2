@@ -1,23 +1,23 @@
 <script setup>
-// const darkmode = useDarkmode();
+const darkmode = useDarkmode();
 </script>
 
 <template>
   <div>
-<!--    <Html lang="fr" :data-theme="darkmode.active ? 'dark' : 'emerald'"/>-->
-    <Head>
-      <Title>Thomas Rousseau - Site web</Title>
-      <Meta name="description"
-            content="Bienvenue sur le site personnel de Thomas Rousseau, développeur frontend,
+      <Html lang="fr" :data-theme="darkmode ? 'dark' : 'emerald'"/>
+  <Head>
+    <Title>Thomas Rousseau - Site web</Title>
+    <Meta name="description"
+          content="Bienvenue sur le site personnel de Thomas Rousseau, développeur frontend,
              javascript, typescript, NuxtJS et VueJS."/>
-      <Link rel="preconnect" href="https://fonts.googleapis.com"/>
-      <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-      <Link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
-          rel="stylesheet"
-          media="print"
-          onload="this.onload=null;this.media='all'"/>
-    </Head>
+    <Link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <Link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+        rel="stylesheet"
+        media="print"
+        onload="this.onload=null;this.media='all'"/>
+  </Head>
     <NuxtLayout>
       <NuxtPage/>
     </NuxtLayout>

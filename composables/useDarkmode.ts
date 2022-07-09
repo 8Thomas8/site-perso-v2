@@ -1,9 +1,3 @@
-    export default function () {
-        const darkmode = useState('darkmode', () => ({
-            active: false
-        }))
-
-
-        return {
-            darkmode}
+export const useDarkmode = () => {
+    return useState('isActive', () => false)
 }

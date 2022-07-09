@@ -87,8 +87,7 @@ const experiences = [
       ],
       comment: 'Formation de 3 mois sur Java et Angular, avec une promesse d\'embauche chez Apside Rennes en cas de réussite. L\'objectif était d\'être opérationnel à la fin de la formation.',
     },
-    exemples: [
-    ],
+    exemples: [],
   },
   {
     type: 'Formation',
@@ -104,32 +103,35 @@ const experiences = [
       ],
       comment: 'Formation  de développeur d\'application frontend de 12 mois, avec obtention d\'un titre RNCP en cas de réussite. L\'objectif était d\'être opérationnel dans le développement from scratcj d\'une application web frontend, et de s\'initier aux outils de reflexion et de construction du projet, avant de commencer à coder.',
     },
-    exemples: [
-    ],
+    exemples: [],
   },
 ];
 </script>
 
 <template>
   <div>
-    <Head>
-      <Title>Thomas Rousseau - Mon CV</Title>
-      <Meta name="description"
-            content="Toutes mes expériences professionnelles marquantes, ainsi que mes formations, sont présentes sur cette page. N'hésitez pas à les consulter.."/>
-    </Head>
-    <section class="flex items-center h-full">
-      <div class="w-full mx-auto max-w-5xl">
-        <div class="px-4">
-          <div class="carousel w-full">
-            <XpCard :experiences="experiences"/>
-          </div>
-          <div class="flex lg:hidden justify-center w-full py-2 gap-2">
-            <template v-for="(xp, index) in experiences" :key="index">
-              <a :href="'#slide' + (index+1)" title="" class="btn btn-xs">{{index+1}}</a>
-            </template>
-          </div>
-        </div>
+  <Head>
+    <Title>Thomas Rousseau - Mon CV</Title>
+    <Meta name="description"
+          content="Toutes mes expériences professionnelles marquantes dans ce domaine, ainsi que mes formations, sont présentes sur cette page. N'hésitez pas à les consulter."/>
+  </Head>
+  <section class="flex items-center h-full">
+    <div class="w-full mx-auto max-w-5xl">
+      <div class="px-4">
+        <template v-for="(xp, index) in experiences" :key="index">
+          <template v-if="index > 0">
+            <div class="divider py-14">
+              <svg class="w-12 h-12 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
+              </svg>
+            </div>
+          </template>
+          <XpCard :xp="xp"/>
+        </template>
       </div>
-    </section>
+    </div>
+  </section>
   </div>
 </template>
