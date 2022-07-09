@@ -7,9 +7,7 @@ export default {
 </script>
 
 <template>
-  <div>
     <div class="flex items-center h-full">
       <HomeHero/>
     </div>
-  </div>
 </template>

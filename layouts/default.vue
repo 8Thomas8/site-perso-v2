@@ -24,20 +24,18 @@ const navigation = [
 
         <Header :navigation="navigation"/>
 
-        <div class="w-full mx-auto max-w-5xl h-[36px]">
+        <div class="w-full mx-auto max-w-5xl h-[36px] mb-4 lg:mb-8">
           <Breadcrumbs v-if="$route.path !== '/'"/>
         </div>
-        <div class="flex-grow pt-3">
-          <main class="py-8">
-            <!-- Page content here -->
-            <slot/>
-          </main>
-        </div>
+        <main class="flex-grow py-8 pt-3">
+          <!-- Page content here -->
+          <slot/>
+        </main>
 
         <Footer/>
       </div>
 
-      <DrawerSide :navigation="navigation" />
+      <DrawerSide :navigation="navigation"/>
 
     </div>
   </div>
