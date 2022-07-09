@@ -9,7 +9,6 @@ let darkmode = useDarkmode()
         <p>Copyright © {{ new Date().getFullYear() }} - Tous droits réservés</p>
       </div>
       <div>
-        {{darkmode.isActive.value }}
         <label class="swap swap-rotate">
 
           <!-- this hidden checkbox controls the state -->
