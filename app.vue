@@ -4,7 +4,7 @@ const darkmode = useDarkmode();
 
 <template>
   <div>
-      <Html lang="fr" :data-theme="darkmode ? 'dark' : 'emerald'"/>
+      <Html lang="fr" :data-theme="darkmode.isActive.value ? 'dark' : 'emerald'"/>
   <Head>
     <Title>Thomas Rousseau - Site web</Title>
     <Meta name="description"
