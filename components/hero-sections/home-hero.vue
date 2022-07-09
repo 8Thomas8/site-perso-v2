@@ -2,7 +2,7 @@
   <section class="hero">
     <div class="w-full mx-auto max-w-5xl">
       <div class="hero-content flex-col lg:flex-row-reverse">
-        <img src="assets/images/profil.jpg" class="w-[250px] h-[250px] rounded-lg shadow-2xl"/>
+        <img src="~/assets/images/profil.jpg" class="w-[250px] h-[250px] rounded-lg shadow-2xl"/>
         <div>
           <h1 class="text-5xl font-bold">Thomas Rousseau</h1>
           <p class="pt-6 pb-2">Je suis développeur front end depuis 2019 et je travaille
