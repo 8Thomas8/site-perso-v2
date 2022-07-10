@@ -101,7 +101,7 @@ const experiences = [
         'Angular',
         'UML',
       ],
-      comment: 'Formation  de développeur d\'application frontend de 12 mois, avec obtention d\'un titre RNCP en cas de réussite. L\'objectif était d\'être opérationnel dans le développement from scratcj d\'une application web frontend, et de s\'initier aux outils de reflexion et de construction du projet, avant de commencer à coder.',
+      comment: 'Formation  de développeur d\'application frontend de 12 mois, avec obtention d\'un titre RNCP en cas de réussite. L\'objectif était d\'être opérationnel dans le développement from scratch d\'une application web frontend, et de s\'initier aux outils de réflexion et de construction du projet, avant de commencer à coder.',
     },
     exemples: [],
   },
