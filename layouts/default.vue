@@ -15,7 +15,6 @@ const navigation = [
 ];
 
 const asideIsVisible = ref(false);
-
 </script>
 
 <template>
