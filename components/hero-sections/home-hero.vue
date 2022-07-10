@@ -2,10 +2,10 @@
   <section class="hero">
     <div class="w-full mx-auto max-w-5xl">
       <div class="hero-content flex-col lg:flex-row-reverse">
-        <img src="~/assets/images/profil.jpg" class="w-[250px] h-[250px] rounded-lg shadow-2xl"/>
+        <img alt="Photo Thomas Rousseau" src="~/assets/images/profil.jpg" class="w-[250px] h-[250px] rounded-lg shadow-2xl"/>
         <div>
           <h1 class="text-5xl font-bold">Thomas Rousseau</h1>
-          <p class="pt-6 pb-2">Je suis développeur front end depuis 2019 et je travaille
+          <p class="pt-6 pb-4 lg:pb-2">Je suis développeur front end depuis 2019 et je travaille
             principalement avec
             <a href="https://v3.nuxtjs.org/" target="_blank" title="Site NuxtJS"
                class="link link-accent font-semibold">
@@ -23,7 +23,7 @@
             </a>
             , forcement).
           </p>
-          <p class="pb-6">Je travaille également avec
+          <p class="pb-8 lg:pb-6">Je travaille également avec
             <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"
                title="Site MDN Javascript" class="link link-accent">
               <svg class="w-7 h-7 inline" viewBox="0 0 24 24" aria-labelledby="Logo Javascript">
@@ -57,7 +57,7 @@
             </a>
             avec et sans API.
           </p>
-          <p class="pb-6">Vous pouvez me contacter via <a href="https://www.linkedin.com/in/tomrss/" class="link link-secondary font-semibold" title="Linkedin" target="_blank">Linkedin</a> ou <a href="https://twitter.com/Thomas_RSO" class="link link-secondary font-semibold" title="Twitter" target="_blank">Twitter</a>.</p>
+          <p class="pb-8 lg:pb-6">Vous pouvez me contacter via <a href="https://www.linkedin.com/in/tomrss/" class="link link-secondary font-semibold" title="Linkedin" target="_blank">Linkedin</a> ou <a href="https://twitter.com/Thomas_RSO" class="link link-secondary font-semibold" title="Twitter" target="_blank">Twitter</a>.</p>
           <nuxt-link to="cv" title="Consulter mes expériences" class="btn btn-primary">Consulter mes expériences</nuxt-link>
         </div>
       </div>

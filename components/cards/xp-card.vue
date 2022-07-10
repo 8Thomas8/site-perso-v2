@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="card bg-base-100 rounded-lg shadow-xl max-w-xl mx-auto w-full">
+    <div class="card bg-base-100 rounded-lg shadow-xl max-w-2xl mx-auto w-full">
       <div class="p-6">
         <div class="flex justify-between">
           <h2 class="text-xl lg:text-3xl font-extrabold">{{ xp.enterprise }} <span class="badge badge-accent relative -top-1">{{xp.type}}</span></h2>
