@@ -12,7 +12,6 @@ let darkmode = useDarkmode()
         <label class="swap swap-rotate">
 
           <!-- this hidden checkbox controls the state -->
-          <label class="hidden" for="darkmode-toggle">Darkmode toggle</label>
           <input id="darkmode-toggle" v-model="darkmode.isActive.value" type="checkbox" :checked="darkmode.isActive.value"/>
 
           <!-- sun icon -->
