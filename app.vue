@@ -17,6 +17,8 @@ const darkmode = useDarkmode();
         rel="stylesheet"
         media="print"
         onload="this.onload=null;this.media='all'"/>
+    <Script defer data-domain="thomas-rousseau.fr" src="https://plausible.io/js/plausible.js"/>
+
   </Head>
     <NuxtLayout>
       <NuxtPage/>
