@@ -120,7 +120,7 @@ const experiences = [
       <div class="px-4">
         <template v-for="(xp, index) in experiences" :key="index">
           <template v-if="index > 0">
-            <div class="divider py-14">
+            <div class="divider py-7 lg:py-14">
               <svg class="w-12 h-12 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                    xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

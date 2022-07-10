@@ -8,8 +8,9 @@ let darkmode = useDarkmode()
       <div class="items-center grid-flow-col">
         <p>Copyright © {{ new Date().getFullYear() }} - Tous droits réservés</p>
       </div>
-      <div>
-        <label class="swap swap-rotate">
+      <div class="flex items-center">
+        <span class="md:hidden">Mode sombre : </span>
+        <label class="swap swap-rotate -mt-1 md:mt-0">
 
           <!-- this hidden checkbox controls the state -->
           <input id="darkmode-toggle" v-model="darkmode.isActive.value" type="checkbox" :checked="darkmode.isActive.value"/>
