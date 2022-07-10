@@ -1,6 +1,9 @@
 export const useDarkmode = () => {
     const isActiveCookie = useCookie('darkmode')
-    isActiveCookie.value = false
+
+    if (!isActiveCookie.value) {
+        isActiveCookie.value = false
+    }
 
     const isActive = useState('isActive', () => {
         if (isActiveCookie) {
