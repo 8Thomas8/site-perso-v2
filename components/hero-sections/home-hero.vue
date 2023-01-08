@@ -2,7 +2,8 @@
   <section class="hero">
     <div class="w-full mx-auto max-w-5xl">
       <div class="hero-content flex-col lg:flex-row-reverse">
-        <img alt="Photo Thomas Rousseau" src="~/assets/images/profil.jpg" class="w-[250px] h-[250px] rounded-lg shadow-2xl"/>
+        <img alt="Photo Thomas Rousseau" src="~/assets/images/profil.jpg"
+             class="w-[250px] h-[250px] rounded-lg shadow-2xl"/>
         <div>
           <h1 class="text-5xl font-bold">Thomas Rousseau</h1>
           <p class="pt-6 pb-4 lg:pb-2">Je suis développeur front end depuis 2019 et je travaille
@@ -12,7 +13,8 @@
               <svg class="w-6 h-6 inline" viewBox="0 0 24 24" aria-labelledby="Logo NuxtJS">
                 <path fill="currentColor"
                       d="M21.8 18.36L16.03 8.08C15.93 8 15.63 7.43 15.03 7.43C14.78 7.43 14.43 7.53 14.07 8.08L13.33 9.26L11.31 5.65C11.26 5.55 10.91 5 10.31 5C10.06 5 9.66 5.1 9.36 5.65L2.18 18.31C2.13 18.41 1.83 19 2.13 19.5C2.23 19.75 2.53 20 3.19 20H20.85C20.95 20 21.6 20 21.9 19.5C22 19.26 22.1 18.86 21.8 18.36M8.1 18.31L7.95 18.86H3.24L10.36 6.34L12.66 10.47L8.1 18.31M9.21 18.86L13.32 11.66L17.5 18.86H9.21M18.74 18.86L18.54 18.31L14 10.46L15.03 8.73L20.75 18.86H18.74Z"/>
-              </svg>NuxtJS</a> (et
+              </svg>
+              NuxtJS</a> (et
             accessoirement
             <a href="https://www.typescriptlang.org/" target="_blank" title="Site VueJS"
                class="link link-accent">
@@ -57,8 +59,11 @@
             </a>
             avec et sans API.
           </p>
-          <p class="pb-8 lg:pb-6">Vous pouvez me contacter via <a href="https://www.linkedin.com/in/tomrss/" class="link link-secondary font-semibold" title="Linkedin" target="_blank">Linkedin</a> ou <a href="https://twitter.com/Thomas_RSO" class="link link-secondary font-semibold" title="Twitter" target="_blank">Twitter</a>.</p>
-          <nuxt-link to="cv" title="Consulter mes expériences" class="btn btn-primary">Consulter mes expériences</nuxt-link>
+          <p class="pb-8 lg:pb-6">Vous pouvez me contacter via <a href="https://www.linkedin.com/in/tomrss/"
+                                                                  class="link link-secondary font-semibold"
+                                                                  title="Linkedin" target="_blank">Linkedin</a> ou <a
+              href="https://twitter.com/Thomas_RSO" class="link link-secondary font-semibold" title="Twitter"
+              target="_blank">Twitter</a>.</p>
         </div>
       </div>
     </div>

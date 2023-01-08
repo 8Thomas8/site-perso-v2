@@ -1,23 +1,22 @@
 export const useDarkmode = () => {
-    const isActiveCookie = useCookie('darkmode')
+  let isActiveCookie = useCookie('darkmode').value === 'true';
 
-    if (!isActiveCookie.value) {
-        isActiveCookie.value = false
+  if (!isActiveCookie) {
+    isActiveCookie = false;
+  }
+
+  const isActive = useState('isActive', () => {
+    if (isActiveCookie) {
+      return isActiveCookie;
     }
+    return false;
+  });
 
-    const isActive = useState('isActive', () => {
-        if (isActiveCookie) {
-            return isActiveCookie.value
-        } else {
-            return false
-        }
-    })
+  watch(isActive, () => {
+    isActiveCookie = isActive.value;
+  });
 
-    watch(isActive, () => {
-        isActiveCookie.value = isActive.value
-    })
-
-    return {
-        isActive
-    }
-}
+  return {
+    isActive,
+  };
+};

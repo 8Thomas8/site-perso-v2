@@ -1,5 +1,5 @@
-<script setup>
-let darkmode = useDarkmode()
+<script setup lang="ts">
+const darkmode = useDarkmode();
 </script>
 
 <template>
