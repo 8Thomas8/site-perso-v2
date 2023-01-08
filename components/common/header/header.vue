@@ -1,7 +1,4 @@
-<script setup>
-
-import Logo from './logo';
-
+<script setup lang="ts">
 defineProps({
   navigation: {
     type: Object,
@@ -23,20 +20,7 @@ defineProps({
         </label>
       </div>
       <div class="flex-1 px-4">
-        <Logo :title="navigation[0].name" :route="navigation[0].route"/>
-      </div>
-      <div class="flex-none hidden lg:block">
-        <ul class="menu menu-horizontal gap-x-2">
-          <!-- Navbar menu content here -->
-          <template v-for="(item, index) in navigation" :key="index">
-            <li>
-              <NuxtLink class="btn btn-primary rounded-lg min-w-[96px]" :to="item.route"
-                        :title="item.name">
-                {{ item.name }}
-              </NuxtLink>
-            </li>
-          </template>
-        </ul>
+        <CommonHeaderLogo title="Accueil" :route="'/'"/>
       </div>
     </div>
   </div>
