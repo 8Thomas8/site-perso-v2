@@ -10,7 +10,11 @@
     "@nuxtjs/tailwindcss": "^6.4.1",
     "daisyui": "^2.51.3",
     "nuxt": "^3.2.3",
-    "sass": "^1.58.3"
+    "sass": "^1.58.3",
+    "@nuxt/devtools": "^0.2.5",
+    "nuxt-og-image": "^1.4.22",
+    "nuxt-schema-org": "^2.1.2",
+    "sitemap": "^7.1.1"
   },
   "dependencies": {
     "@nuxtjs/plausible": "^0.2.0"
