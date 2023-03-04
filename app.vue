@@ -1,10 +1,6 @@
-<script setup lang="ts">
-const darkmode = useDarkmode();
-</script>
-
 <template>
   <div>
-      <Html lang="fr" :data-theme="darkmode.isActive.value ? 'dark' : 'emerald'"/>
+      <Html lang="fr" data-theme="emerald"/>
   <Head>
     <Title>Thomas Rousseau - Site web</Title>
     <Meta name="description"

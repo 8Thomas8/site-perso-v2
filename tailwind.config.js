@@ -18,6 +18,6 @@ module.exports = {
     // daisyUI config
     daisyui: {
         themes: ["emerald", "dark"],
-        darkTheme: "dark",
+        darkTheme: false
     },
 }
