@@ -38,7 +38,7 @@ watch(text, (val) => {
         <section class="space-y-2 lg:space-y-4">
           <h1 class="text-center text-4xl font-extrabold text-white lg:text-5xl">Slugify</h1>
           <span
-              class="inline-block w-full text-center">Transformez un texte en une chaîne de caractères ne contenant que des mots-clés lisibles par un être humain..</span>
+              class="inline-block w-full text-center">Transformez un texte en une chaîne de caractères ne contenant que des mots-clés lisibles par un être humain.</span>
 
         </section>
 
