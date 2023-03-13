@@ -9,15 +9,15 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                opensans: ["Open Sans", "sans-serif"],
+                poppins: ["Poppins", "sans-serif"],
                 roboto: ["Roboto", "sans-serif"]
             }
         },
     },
-    plugins: [require("daisyui")],
+    plugins: [require("daisyui"), require('@tailwindcss/typography')],
     // daisyUI config
     daisyui: {
-        themes: ["emerald", "dark"],
-        darkTheme: "dark",
+        themes: ["dark"],
+        darkTheme: false
     },
 }

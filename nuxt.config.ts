@@ -2,6 +2,17 @@
 export default defineNuxtConfig({
     modules: [
         '@nuxtjs/tailwindcss',
-        '@nuxtjs/plausible'
-    ]
+        '@nuxtjs/plausible',
+        'nuxt-og-image',
+        'nuxt-schema-org',
+        '@nuxt/devtools'
+    ],
+    schemaOrg: {
+        host: 'https://thomas-rousseau.fr/'
+    },
+    nitro: {
+        prerender: {
+            routes: ['/sitemap.xml']
+        }
+    }
 })
