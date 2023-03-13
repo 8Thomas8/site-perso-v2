@@ -1,19 +1,20 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "generate": "nuxi generate",
+    "postinstall": "nuxi prepare"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^6.4.1",
+    "@nuxt/devtools": "^0.2.5",
+    "@nuxtjs/tailwindcss": "^6.5.0",
+    "@tailwindcss/typography": "^0.5.9",
     "daisyui": "^2.51.3",
     "nuxt": "^3.2.3",
-    "sass": "^1.58.3",
-    "@nuxt/devtools": "^0.2.5",
-    "nuxt-og-image": "^1.4.22",
+    "nuxt-og-image": "^1.5.2",
     "nuxt-schema-org": "^2.1.2",
+    "sass": "^1.59.2",
     "sitemap": "^7.1.1"
   },
   "dependencies": {
